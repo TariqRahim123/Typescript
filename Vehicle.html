@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vehicle Rental System</title>
+  </head>
+  <body>
+    <h1>Vehicle Rental System</h1>
+    <p>Click the buttons below to rent and return vehicles:</p>
+    <button onclick="rentCar()">Rent Car</button>
+    <button onclick="returnCar()">Return Car</button>
+    <button onclick="rentMotorcycle()">Rent Motorcycle</button>
+    <button onclick="returnMotorcycle()">Return Motorcycle</button>
+
+    <script>
+      // create instances of each type of vehicle
+      const car = new Car("Toyota", "Camry", 2022, false, 5);
+      const motorcycle = new Motorcycle("Harley Davidson", "Sportster", 2020, false, 883);
+
+      function rentCar() {
+        car.rent();
+      }
+
+      function returnCar() {
+        car.return();
+      }
+
+      function rentMotorcycle() {
+        motorcycle.rent();
+      }
+
+      function returnMotorcycle() {
+        motorcycle.return();
+      }
+    </script>
+  </body>
+</html>
